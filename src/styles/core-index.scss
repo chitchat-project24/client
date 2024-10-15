@@ -1,0 +1,48 @@
+@import './config/font-style';
+@import './config/color';
+@import './config/reset';
+
+*,
+*::after,
+*::before {
+  font-family: $nanum-regular;
+}
+
+body {
+  font-size: 16px;
+  font-family: $nanum-regular;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  background-color: $main-white-100;
+  border: 1px solid $main-bluegray;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 375px) {
+  #root {
+    width: 375px;
+  }
+  body {
+    max-width: 375px !important;
+    overflow-x: hidden;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  font-family: $nanum-regular;
+}
