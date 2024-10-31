@@ -1,3 +1,4 @@
+import { Header } from '../../components';
 export default function ProfileListPage() {
-  return <></>;
+  return <Header listType="user" />;
 }
