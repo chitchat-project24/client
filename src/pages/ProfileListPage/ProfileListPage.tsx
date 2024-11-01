@@ -6,8 +6,8 @@ const cx = cs.bind(styles);
 export default function ProfileListPage() {
   return (
     <div>
-      <Header listType="user" />
-      <List />
+      <Header pageType="user" />
+      <List pageType="user" />
     </div>
   );
 }

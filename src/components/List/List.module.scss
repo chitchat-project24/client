@@ -1,5 +1,4 @@
 @use '../../styles/config/color' as *;
-@use '../../styles/config/font-style' as *;
 
 .list-container {
   display: flex;
@@ -9,55 +8,8 @@
   overflow-y: auto;
 }
 
-.list {
-  display: flex;
-  align-items: center;
-  padding: 0.6rem 1rem;
-  margin-bottom: 0.8rem;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .unuser {
   margin-top: 8px;
-}
-
-.profile {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-}
-
-.text-container {
-  margin-left: 0.8rem;
-  width: 70%;
-  margin-right: 1rem;
-
-  p + p {
-    margin-top: 6px;
-  }
-}
-
-.nickname {
-  font-size: 1rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.message {
-  font-size: 0.8rem;
-  font-family: $nanum-light;
-  color: $main-gray-200;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.go-chat {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
 }
 
 .user-hr {
