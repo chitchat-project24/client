@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { User, Message } from '../../types';
 import { images } from '../../assets/images';
 import styles from './ListItem.module.scss';
@@ -17,6 +18,8 @@ export default function ListItem({
   showGoChat,
   showMore,
 }: ListItemProps) {
+  const [showLeaveBtn, setShowLeaveBtn] = useState<boolean>(false);
+
   return (
     <div className={cx('list')}>
       <img src={images.UserProfile} className={cx('profile')} alt="Profile" />
@@ -48,7 +51,18 @@ export default function ListItem({
               <></>
             )}
           </div>
-          {showMore && <img src={images.More} className={cx('more')} />}
+          {showMore && (
+            <img
+              src={images.More}
+              className={cx('more')}
+              onClick={() => setShowLeaveBtn(true)}
+            />
+          )}
+          {showLeaveBtn && (
+            <div className={cx('leave')}>
+              <button className={cx('leaveBtn')}>채팅방 나가기</button>
+            </div>
+          )}
         </>
       )}
     </div>
