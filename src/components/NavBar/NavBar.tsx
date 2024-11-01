@@ -5,7 +5,7 @@ import cs from 'classnames/bind';
 
 const cx = cs.bind(styles);
 
-const NavBar = () => {
+export default function NavBar() {
   const [isActive, setIsActive] = useState<string>('user');
 
   const navItems = [
@@ -35,6 +35,4 @@ const NavBar = () => {
       ))}
     </div>
   );
-};
-
-export default NavBar;
+}
