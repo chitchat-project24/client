@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { images } from '../../assets/images';
 import styles from './NavBar.module.scss';
 import cs from 'classnames/bind';
 
 const cx = cs.bind(styles);
 
-const NavBar: React.FC = () => {
+const NavBar = () => {
   const [isActive, setIsActive] = useState<string>('user');
 
   const navItems = [
