@@ -11,7 +11,7 @@
   position: relative;
   background-color: white;
   border-radius: 100%;
-  animation: bounce 1s infinite;
+  animation: bounce 0.9s infinite;
 }
 
 .logo img {
@@ -27,7 +27,7 @@
   transform: translateY(-50%);
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  animation: shadow 1s infinite;
+  animation: shadow 0.9s infinite;
 }
 
 @keyframes bounce {
