@@ -1,0 +1,65 @@
+[
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User1",
+    "content": "Hello there! How's it going?",
+    "time": "10:00",
+    "unreadCnt": 1
+  },
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User2",
+    "content": "Just finished a great workout!",
+    "time": "01:24",
+    "unreadCnt": 100
+  },
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User3",
+    "content": "Looking forward to the weekend.",
+    "time": "00:13",
+    "unreadCnt": 0
+  },
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User4",
+    "content": "Anyone up for a coffee?",
+    "time": "22:29",
+    "unreadCnt": 3
+  },
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User5",
+    "content": "Let's catch up soon!",
+    "time": "22:20",
+    "unreadCnt": 0
+  },
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User6",
+    "content": "Let's do chit chat!",
+    "time": "20:00",
+    "unreadCnt": 2
+  },
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User7",
+    "content": "yum yum",
+    "time": "17:00",
+    "unreadCnt": 0
+  },
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User8",
+    "content": "What the",
+    "time": "13:14",
+    "unreadCnt": 0
+  },
+  {
+    "profileImage": "UserProfile",
+    "nickname": "User9",
+    "content": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "time": "12:00",
+    "unreadCnt": 0
+  }
+]

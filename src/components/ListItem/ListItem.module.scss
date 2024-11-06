@@ -1,0 +1,127 @@
+@use '../../styles/config/color' as *;
+@use '../../styles/config/font-style' as *;
+
+.list {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.8rem;
+  height: 2.5rem;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0 0.8rem;
+  min-width: 0;
+
+  p + p {
+    margin-top: 6px;
+  }
+}
+
+.nickname {
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.message,
+.content {
+  font-size: 0.8rem;
+  font-family: $nanum-light;
+  color: $main-gray-300;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  flex-shrink: 0;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: $main-gray-300;
+}
+
+.unread {
+  font-size: 0.7rem;
+  color: $main-white-300;
+  background-color: $main-blue-500;
+  border-radius: 100%;
+  width: 0.6rem;
+  height: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px;
+  margin-top: 4px;
+
+  &.large {
+    width: 1.6rem;
+  }
+}
+
+.go-chat,
+.more {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.leave {
+  position: absolute;
+  top: 3.3rem;
+  right: 1.1rem;
+}
+
+.leaveBtn {
+  position: relative;
+  font-size: 0.8rem;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: $main-bluegray;
+  text-align: center;
+  border: none;
+
+  &:after {
+    border-top: 0 solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid $main-bluegray;
+    content: '';
+    position: absolute;
+    bottom: 22px;
+    right: 10px;
+  }
+
+  &:hover {
+    background-color: $main-blue-300;
+
+    &:after {
+      border-bottom-color: $main-blue-300;
+    }
+  }
+}
