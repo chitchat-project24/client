@@ -1,6 +1,5 @@
 import profileData from '../../data/profile.json';
 import messageData from '../../data/chatlist.json';
-import { images } from '../../assets/images';
 import styles from './List.module.scss';
 import cs from 'classnames/bind';
 import { useEffect, useState } from 'react';
@@ -29,7 +28,7 @@ export default function List({ pageType }: PageTypeProps) {
         <>
           {/* 임의로 0 번째 데이터가 자신이라고 가정 */}
           {data.length > 0 && (
-            <div>
+            <div className={cx('user')}>
               <ListItem user={data[0]} pageType={pageType} showGoChat={false} />
               <hr className={cx('user-hr')} />
             </div>

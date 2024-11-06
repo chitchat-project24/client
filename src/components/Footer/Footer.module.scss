@@ -1,0 +1,24 @@
+@use '../../styles/config/color' as *;
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 296px;
+  height: 1.8rem;
+  padding: 0.6rem 1.4rem;
+  background-color: $main-bluegray;
+  border-radius: 20px;
+
+  img {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.4rem;
+    cursor: pointer;
+  }
+}
+
+.active {
+  border-radius: 20px;
+  background-color: $main-blue-500;
+}

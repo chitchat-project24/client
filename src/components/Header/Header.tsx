@@ -21,7 +21,7 @@ const icon: Record<PageTypeProps['pageType'], string[]> = {
 
 export default function Header({ pageType }: PageTypeProps) {
   return (
-    <div className={cx('wrapper')}>
+    <div className={cx('header-container')}>
       <h2 className={cx('title')}>{title[pageType]}</h2>
       <div className={cx('img-container')}>
         {icon[pageType].map((src, idx) => (

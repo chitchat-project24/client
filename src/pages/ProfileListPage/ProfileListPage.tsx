@@ -1,13 +1,20 @@
-import { Header, List } from '../../components';
-import styles from './ProfileListPage.module.scss';
+import { Header, List, Footer } from '../../components';
+import sharedStyles from '../../styles/layout/share.module.scss';
 import cs from 'classnames/bind';
-const cx = cs.bind(styles);
+const cx = cs.bind(sharedStyles);
 
 export default function ProfileListPage() {
   return (
-    <div>
-      <Header pageType="user" />
-      <List pageType="user" />
+    <div className={cx(sharedStyles.sharedLayout)}>
+      <div className={cx(sharedStyles.header)}>
+        <Header pageType="user" />
+      </div>
+      <div className={cx(sharedStyles.list)}>
+        <List pageType="user" />
+      </div>
+      <div className={cx(sharedStyles.footer)}>
+        <Footer />
+      </div>
     </div>
   );
 }
