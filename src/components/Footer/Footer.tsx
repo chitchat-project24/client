@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { images } from '../../assets/images';
-import styles from './NavBar.module.scss';
+import styles from './Footer.module.scss';
 import cs from 'classnames/bind';
 
 const cx = cs.bind(styles);
@@ -23,7 +23,7 @@ export default function NavBar() {
   ];
 
   return (
-    <div className={cx('wrapper')}>
+    <div className={cx('footer-container')}>
       {navItems.map(({ name, defaultImage, activeImage }) => (
         <img
           key={name}

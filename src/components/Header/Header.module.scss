@@ -1,0 +1,22 @@
+@use '../../styles/config/font-style' as *;
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 1.2rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-family: $nanum-bold;
+}
+
+.img {
+  width: 1.6rem;
+  cursor: pointer;
+
+  & + & {
+    margin-left: 8px;
+  }
+}

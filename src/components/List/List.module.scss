@@ -1,0 +1,18 @@
+@use '../../styles/config/color' as *;
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.unuser {
+  margin-top: 8px;
+}
+
+.user-hr {
+  width: 95%;
+  border: none;
+  height: 1px;
+  background-color: $main-bluegray;
+}

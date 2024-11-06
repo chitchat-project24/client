@@ -1,4 +1,4 @@
-import { LandingPage, ProfileListPage } from '../pages';
+import { LandingPage, ProfileListPage, ChattingListPage } from '../pages';
 
 interface RouteItem {
   path: string;
@@ -20,6 +20,11 @@ export const ROUTE: Routes = {
     path: '/profilelist',
     link: '/profilelist',
     element: <ProfileListPage />,
+  },
+  CHATTING_LIST_PAGE: {
+    path: '/chattinglist',
+    link: '/chattinglist',
+    element: <ChattingListPage />,
   },
   // 밑으로 계속 추가하기
 };
