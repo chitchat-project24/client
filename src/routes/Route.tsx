@@ -1,4 +1,9 @@
-import { LandingPage, ProfileListPage, ChattingListPage } from '../pages';
+import {
+  LandingPage,
+  LoginPage,
+  ProfileListPage,
+  ChattingListPage,
+} from '../pages';
 
 interface RouteItem {
   path: string;
@@ -15,6 +20,11 @@ export const ROUTE: Routes = {
     path: '/',
     link: '/',
     element: <LandingPage />,
+  },
+  LOGIN_PAGE: {
+    path: '/login',
+    link: '/login',
+    element: <LoginPage />,
   },
   PROFILE_LIST_PAGE: {
     path: '/profilelist',

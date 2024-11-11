@@ -1,3 +1,4 @@
+import logo from './logo.png';
 import search from './search.png';
 import userPlus from './userPlus.png';
 import userProfile from './userprofile.png';
@@ -11,6 +12,7 @@ import whitemessage from './WhiteMessage.png';
 import whitesetting from './WhiteSetting.png';
 
 export const images = {
+  Logo: logo,
   Search: search,
   UserPlus: userPlus,
   UserProfile: userProfile,
