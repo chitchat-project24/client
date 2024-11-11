@@ -8,22 +8,20 @@
 }
 
 .logo {
-  position: relative;
   background-color: white;
-  border-radius: 100%;
   animation: bounce 0.9s infinite;
-}
 
-.logo img {
-  width: 340px;
-  height: auto;
+  img {
+    width: 340px;
+    height: auto;
+  }
 }
 
 .shadow {
   position: absolute;
   width: 86%;
   height: 0.8em;
-  top: 50%;
+  top: calc(50% + 0.9rem);
   transform: translateY(-50%);
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.2);
