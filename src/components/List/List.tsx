@@ -4,7 +4,7 @@ import styles from './List.module.scss';
 import cs from 'classnames/bind';
 import { useEffect, useState } from 'react';
 import { ListItem } from '../../components';
-import { User, Message } from '../../types';
+import { User, Chat } from '../../types';
 const cx = cs.bind(styles);
 
 interface PageTypeProps {
@@ -12,7 +12,7 @@ interface PageTypeProps {
 }
 
 export default function List({ pageType }: PageTypeProps) {
-  const [data, setData] = useState<Array<User | Message>>([]);
+  const [data, setData] = useState<Array<User | Chat>>([]);
 
   useEffect(() => {
     if (pageType === 'user') {

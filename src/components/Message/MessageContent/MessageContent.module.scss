@@ -1,0 +1,133 @@
+@use '../../../styles/config/color' as *;
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.message {
+  display: flex;
+  // align-items: flex-start;
+
+  &.user {
+    flex-direction: row-reverse;
+    padding-left: 2rem;
+
+    .content-div {
+      flex-direction: row-reverse;
+    }
+
+    .content {
+      color: $main-white-100;
+      background-color: $main-blue-500;
+      border: none;
+    }
+
+    .detail {
+      margin-right: 4px;
+    }
+
+    .read-status {
+      margin-left: 1.6rem;
+    }
+  }
+
+  &.notuser {
+    flex-direction: row;
+
+    .content-div {
+      flex-direction: row;
+    }
+
+    .content {
+      color: $main-blue-600;
+      background-color: $main-white-100;
+      border: 1px solid $main-blue-500;
+      margin-left: 0.4rem;
+    }
+
+    .detail {
+      margin-left: 4px;
+    }
+  }
+}
+.date-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date {
+  color: $main-blue-600;
+  background-color: $main-bluegray;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  margin: 1rem 0;
+}
+
+.profile-img {
+  display: flex;
+
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+  }
+}
+
+.content-div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.content {
+  box-sizing: border-box;
+  max-width: 268px;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  word-break: break-all;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.content-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 15; /* maxLines의 줄 수 */
+  -webkit-box-orient: vertical;
+}
+
+.expandable-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  img {
+    width: 1.2rem;
+  }
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.read-status,
+.send-time {
+  font-size: 0.6rem;
+}
+
+.read-status {
+  color: $main-pink-200;
+  margin-bottom: 0.2rem;
+}
+
+.send-time {
+  color: $main-blue-600;
+}

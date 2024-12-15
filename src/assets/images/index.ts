@@ -10,6 +10,13 @@ import setting from './Setting.png';
 import whiteuser from './WhiteUser.png';
 import whitemessage from './WhiteMessage.png';
 import whitesetting from './WhiteSetting.png';
+import previous from './previous.png';
+import leave from './leave.png';
+import send from './send.png';
+import rightarrow from './RightArrow.png';
+import userrightarrow from './UserRightArrow.png';
+import friendrightarrow from './FreindRightArrow.png';
+import close from './Close.png';
 
 export const images = {
   Logo: logo,
@@ -24,4 +31,11 @@ export const images = {
   WhiteUser: whiteuser,
   WhiteMessage: whitemessage,
   WhiteSetting: whitesetting,
+  Previous: previous,
+  Leave: leave,
+  Send: send,
+  RightArrow: rightarrow,
+  UserRightArrow: userrightarrow,
+  FriendRightArrow: friendrightarrow,
+  Close: close,
 };

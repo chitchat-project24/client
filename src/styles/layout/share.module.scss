@@ -1,3 +1,6 @@
+@use '../config/font-style' as *;
+@use '../config/color' as *;
+
 .sharedLayout {
   display: flex;
   flex-direction: column;
@@ -18,4 +21,45 @@
     align-items: center;
     box-sizing: border-box;
   }
+}
+
+// 채팅방
+.room-wrapper {
+  background-color: $main-blue-100;
+}
+
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.6rem;
+}
+
+.previous,
+.leave {
+  width: 1.6rem;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 1.2rem;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-right: 0.6rem;
+}
+
+.friend-name {
+  font-family: $nanum-bold;
+  font-size: 1.2rem;
+  width: 14rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

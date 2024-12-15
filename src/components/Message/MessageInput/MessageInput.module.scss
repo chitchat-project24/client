@@ -1,0 +1,51 @@
+@use '../../../styles/config/color' as *;
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 308px;
+  height: auto;
+  padding: 0.6rem 1rem;
+  background-color: $main-white-100;
+  border-radius: 20px;
+}
+
+.input {
+  border: 1px solid $main-blue-500;
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+  resize: none;
+  line-height: 1.6rem; // 높이 의논 필요함
+  min-height: 1.6rem;
+  max-height: 3.2rem;
+  overflow-y: auto;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.8rem;
+  margin-left: 0.4rem;
+  background-color: $main-blue-200;
+  border: 1px solid $main-blue-300;
+  border-radius: 20px;
+  height: auto;
+  cursor: pointer;
+
+  img {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0.3rem;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $main-blue-300;
+  }
+}
