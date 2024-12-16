@@ -1,12 +1,12 @@
 import { MessageContent, MessageInput } from '../../components';
 import { images } from '../../assets/images';
-import sharedStyles from '../../styles/layout/share.module.scss';
+import sharedStyles from '../../styles/layout/chat-features-share.module.scss';
 import cs from 'classnames/bind';
 const cx = cs.bind(sharedStyles);
 
 export default function ChattingRoomPage() {
   return (
-    <div className={cx(sharedStyles.sharedLayout, 'room-wrapper')}>
+    <div className={cx(sharedStyles.sharedLayout, 'room-container')}>
       <div className={cx(sharedStyles.header, 'room-header')}>
         <img src={images.Previous} className={cx('previous')}></img>
         <div className={cx('profile')}>
