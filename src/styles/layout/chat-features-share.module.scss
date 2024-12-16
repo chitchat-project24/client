@@ -4,7 +4,8 @@
 .sharedLayout {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 40px);
+  padding-top: 20px;
+  height: calc(100vh - 20px);
 
   .header {
     flex: 0 0 6vh; // Header 높이
