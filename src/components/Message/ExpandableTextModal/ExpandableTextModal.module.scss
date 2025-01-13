@@ -1,0 +1,51 @@
+@use '../../../styles/config/color' as *;
+
+.fixed-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: #d9d9d960;
+}
+
+.modal-content-container {
+  color: $main-blue-600;
+  background-color: $main-blue-200;
+  padding: 1.5rem 1.8rem;
+  max-width: 290px;
+  max-height: 73%;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 1.2rem;
+  }
+
+  &:hover {
+    border-radius: 100%;
+    background-color: $main-blue-100;
+  }
+}
+
+.modal-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.2rem;
+  box-sizing: content-box;
+}

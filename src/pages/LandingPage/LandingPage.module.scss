@@ -1,4 +1,4 @@
-.wrapper {
+.landing-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
 .shadow {
   position: absolute;
   width: 86%;
-  height: 0.8em;
+  height: 0.8rem;
   top: calc(50% + 0.9rem);
   transform: translateY(-50%);
   border-radius: 100%;

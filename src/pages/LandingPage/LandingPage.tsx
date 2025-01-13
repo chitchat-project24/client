@@ -20,7 +20,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className={cx('wrapper')}>
+    <div className={cx('landing-container')}>
       <div className={cx('logo')}>
         <img src={images.Logo} />
       </div>

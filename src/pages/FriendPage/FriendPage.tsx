@@ -1,5 +1,5 @@
 import { Header, List, Footer } from '../../components';
-import sharedStyles from '../../styles/layout/share.module.scss';
+import sharedStyles from '../../styles/layout/chat-features-share.module.scss';
 import cs from 'classnames/bind';
 const cx = cs.bind(sharedStyles);
 

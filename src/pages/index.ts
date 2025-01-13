@@ -1,4 +1,5 @@
 export * from './LandingPage';
 export * from './LoginPage';
-export * from './ProfileListPage';
-export * from './ChattingListPage';
+export * from './FriendPage';
+export * from './ChattingPage';
+export * from './ChattingRoomPage';

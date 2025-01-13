@@ -8,9 +8,14 @@
   margin-bottom: 0.8rem;
   height: 2.5rem;
   position: relative;
+  cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: $main-white-300;
   }
 }
 
