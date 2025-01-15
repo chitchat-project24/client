@@ -1,0 +1,56 @@
+@use '../../styles/config/color' as *;
+@use '../../styles/config/font-style' as *;
+
+.login-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+
+  .logo {
+    align-self: center;
+    margin-bottom: 17px;
+    img {
+      width: 280px;
+      height: auto;
+    }
+  }
+
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .button-section {
+    .links {
+      display: flex;
+      gap: 5px;
+      padding-top: 11px;
+      justify-content: end;
+
+      a {
+        font-family: 'NanumSquareNeoBold';
+        font-size: 12px;
+        color: $main-blue-500;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+
+      a:not(:last-child) {
+        margin-right: 5px;
+      }
+
+      a:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        background-color: $main-blue-500;
+        margin-left: 5px;
+        margin-top: 1px;
+      }
+    }
+  }
+}

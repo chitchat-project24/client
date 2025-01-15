@@ -1,0 +1,35 @@
+@use '../../styles/config/color' as *;
+
+.input-container {
+  display: flex;
+  height: 2.5rem;
+  border: 1px solid $main-blue-300;
+  padding: 0.3rem 0.5rem;
+  box-sizing: border-box;
+  gap: 1rem;
+  border-radius: 0.2rem;
+  align-items: center;
+  .input-icon {
+    width: 24px;
+    height: 24px;
+
+    img {
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  input {
+    border: none;
+    height: -webkit-fill-available;
+    font-size: 0.9rem;
+  }
+
+  input::placeholder {
+    color: $main-gray;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}

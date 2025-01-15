@@ -10,6 +10,8 @@ import setting from './Setting.png';
 import whiteuser from './WhiteUser.png';
 import whitemessage from './WhiteMessage.png';
 import whitesetting from './WhiteSetting.png';
+import inputuser from './InputUser.png';
+import inputPassword from './InputPassword.png';
 
 export const images = {
   Logo: logo,
@@ -24,4 +26,6 @@ export const images = {
   WhiteUser: whiteuser,
   WhiteMessage: whitemessage,
   WhiteSetting: whitesetting,
+  InputUser: inputuser,
+  inputPassword: inputPassword,
 };
